@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    
+<link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+
+<body class="main"><div class="top"><h1>Customer Survey Form</h1></div>
+    
+    <div class="container">
+        <h1 class="form-title"></h1>
+        <form action="#">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullName"> Name</label>
+              <input type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder=""/>
+            </div>
+            <div class="user-input-box">
+              <label for="username">Email</label>
+              <input type="text"
+                      id="username"
+                      name="username"
+                      placeholder=""/>
+            </div>
+           
+            
+           
+           
+          </div>
+          <div class="gender-details-box">
+            <span class="gender-title">Is this first You are using our product & service?</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Yes</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">No</label>
+             
+            </div>
+          </div>
+          <div class="gender-details-box">
+            <span class="gender-title">Would you suggestion to your friends and colleague? </span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Yes</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">No</label>
+              
+            </div>
+          </div>
+          <div class="gender-details-box">
+            <span class="gender-title">How satisified to you with our company overall?</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">satisified</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">undecided</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">Unsatisfied</label>
+            </div>
+          </div>
+          <div >
+            <P>Do you have suggestion to improve our service?</P>
+            <textarea name="mss" rows="5" cols="80"></textarea>
+          </div>
+          <div class="submitBtn">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <div class="bot">&copy; 2018 Customer Survey Form . All Rights Reserved | Design by <a href="#">Aditya</a>  </divs>
+
+    <script>
+        // JavaScript for form submission and validation
+        const form = document.getElementById("surveyForm");
+        const submitBtn = document.getElementById("submitBtn");
+    
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add validation logic here
+            // If validation passes, display a popup with the collected data
+            // and then reset the form
+            // Use window.alert or a custom modal for the popup
+        });
+
+        
+    </script>
+</body>
+</html>
